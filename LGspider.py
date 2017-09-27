@@ -36,9 +36,8 @@ def get_job_json(url,pn,UA,search):
         "Host":"www.lagou.com"
     }
     respone = requests.post(request_url,headers=headers,data={'first': 'false', 'pn': pn,'kd':'python'}).content
-    # json.dumps(json.loads(respone),ensure_ascii = False,indent=2)
     return respone
-# print json.loads(get_job_json(request_url,2))['content']['positionResult']['result']
+
 pageNO = 1
 pn = 0
 while pageNO != 0:
