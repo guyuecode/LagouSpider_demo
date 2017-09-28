@@ -35,7 +35,7 @@ def get_job_json(url,pn,UA,search):
         "Referer":"https://www.lagou.com/jobs/list_%s?labelWords=&fromSearch=true&suginput="%search,
         "Host":"www.lagou.com"
     }
-    respone = requests.post(request_url,headers=headers,data={'first': 'false', 'pn': pn,'kd':'python'}).content
+    respone = requests.post(request_url,headers=headers,data={'first': 'false', 'pn': pn,'kd':search}).content
     return respone
 
 pageNO = 1
