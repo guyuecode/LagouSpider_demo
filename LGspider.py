@@ -51,7 +51,7 @@ while pageNO != 0:
 
     if pageNO != 0:
         for PS in range(pageSize):
-            id = job_data[PS]['publisherId']
+            id = job_data[PS]['positionId']
             JobTitle = job_data[PS]['positionName'].encode('utf-8')
             salary = job_data[PS]['salary'].encode('utf-8')
             education = job_data[PS]['education'].encode('utf-8')
